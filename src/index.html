@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure JS Power Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚡ JS Interaktivität</h1>
+            <p>Gehostet auf Azure Storage (Frankfurt)</p>
+        </header>
+        <main>
+            <section class="card">
+                <h2>👤 Personalisierung</h2>
+                <input type="text" id="userName" placeholder="Dein Name...">
+                <button onclick="saveName()">Namen speichern</button>
+                <p id="welcomeMessage"></p>
+            </section>
+            <section class="card">
+                <h2>🌍 Live Krypto-Daten</h2>
+                <div id="cryptoPrice">Lade Bitcoin Preis...</div>
+                <button onclick="fetchCrypto()">Aktualisieren</button>
+            </section>
+            <section class="card">
+                <h2>🎨 Design-Switch</h2>
+                <button onclick="toggleDarkMode()">Dark Mode an/aus</button>
+            </section>
+        </main>
+        <footer>
+            <p>Standort: germanywestcentral | Zeit: <span id="timestamp"></span></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
